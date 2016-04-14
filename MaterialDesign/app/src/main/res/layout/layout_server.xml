@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="info.androidhive.materialdesign.activity.HomeFragment">
+
+    <android.support.v7.widget.Toolbar android:id="@+id/my_awesome_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+        />
+    <TextView
+        android:id="@+id/label"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="45dp"
+        android:text="Oops!"
+        android:textColor="#ff9800"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+
+        android:id="@+id/label1"
+        android:textColor="#ff9800"
+        android:layout_below="@id/label"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Terjadi kesalahan, Silahkan periksa lagi koneksi anda"/>
+
+
+</RelativeLayout>

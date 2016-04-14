@@ -1,0 +1,21 @@
+<resources>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
+
+    <string name="app_name">Absensi Online</string>
+
+    <string name="name">name</string>
+    <string name="hint_email">Input NIP anda</string>
+    <string name="hint_password">Input Password</string>
+    <string name="hint_name">Nama Lengkap</string>
+    <string name="btn_login">Login</string>
+
+    <string name="action_search">Hello world!</string>
+    <string name="action_settings">Logout</string>
+
+
+
+
+</resources>

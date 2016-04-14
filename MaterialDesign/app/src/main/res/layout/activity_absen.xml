@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.materialdesign.activity.tambah_latihan">
+
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+        />
+    <LinearLayout
+        android:id="@+id/kelas"
+        android:layout_marginTop="65dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        >
+        <TextView
+            android:id="@+id/textViewNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff9800"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="no"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Nama Siswa / Stambuk"
+            android:textColor="#ff9800"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/stambuk"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="Nama Siswa / Stambuk"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint" />
+        <EditText
+            android:id="@+id/status_kehadiran"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="Status Kehadiran"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/qw1"
+        android:layout_below="@+id/kelas"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnHadir"
+            android:layout_weight="1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:background="#ff9800"
+            android:text="Hadir"
+            android:layout_margin="10dp"
+            android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/btnIzin"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:background="#ff9800"
+            android:text="Izin"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textColor="#ffffff" />
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/qw1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+
+            android:id="@+id/btnSakit"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dip"
+            android:background="#ff9800"
+            android:text="Sakit"
+            android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/btnAlfa"
+
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dip"
+            android:background="#ff9800"
+            android:text="Alfa"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/rootLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabprev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@mipmap/ic_prev" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/rootLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@mipmap/ic_next" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@android:drawable/ic_menu_save" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>
