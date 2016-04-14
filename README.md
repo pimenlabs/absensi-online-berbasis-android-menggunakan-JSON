@@ -1,1 +1,1 @@
-# absensi
+Aplikasi absensi online menggunakan JSON 
